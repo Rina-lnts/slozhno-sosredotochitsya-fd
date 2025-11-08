@@ -1,5 +1,114 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+position: relative;
+margin: 0px auto;
+font-family: var(--main-font-family), sans-serif;
+background-color: var(--background-color);
+background-image: var(--background-image);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
+
+body{
+  min-height: 6,670px;
+}
+
+.header{
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  padding: 10px;
+  position: relative;
+  grid-template-rows: auto 1fr; 
+  /* Одна основная колонка для контента */
+  grid-template-columns: 1fr;
+}
+
+.header__theme-menu {
+  /* Удалены justify-self и align-self */
+  top: 75px; 
+  right: 20px;
+  position: absolute;
+  z-index: 10; /* Опционально: чтобы меню было поверх всего */
+}
+
+.decorated-zone{
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  /* 1. Позиционирование в правом верхнем углу */
+  bottom: 10px;    /* Отступ от верхнего края (пример) */
+  left: 10px;  /* Отступ от правого края (пример) */
+  
+  /* 2. Создание границ */
+  width: 25px;  /* Размер уголка по ширине */
+  height: 25px; /* Размер уголка по высоте */
+  
+  /* 3. Отрисовка двух сторон границы (top и right) */
+  border-bottom: 1px solid var(--deco-color);
+  border-left: 1px solid var(--deco-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+
+  top: 10px;    
+  right: 10px;  
+  width: 25px;  
+  height: 25px; 
+
+  border-top: 1px solid var(--deco-color);
+  border-right: 1px solid var(--deco-color);
+}
+
+ .decor_rec{
+  display: none;
+ } 
+
+.header__theme-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'IBM Plex mono', sans-serif;
+  line-height: 18px;
+  
+}
+
+.header_title {
+  color: var(--title-color);
+  font-size: var(--title-size);
+  font-weight: bold;
+  line-height: 0.825;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  grid-row: 2; /* Помещаем во вторую (большую) строку */
+  grid-column: 1; 
+
+}
+
+.title-decor {
+  color: var(--bg-color); 
+  background-color: var(--text-color); 
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: bold;
+  line-height: 23.4px;
+}
+
+.header__paragraph {
+  /* ... стили параграфа ... */
+  
+  grid-row: 2; 
+  grid-column: 1; 
+  align-self: end; /* Или start, если он должен быть выше заголовка */
+  
+  /* Вам может понадобиться margin-bottom, чтобы опустить его над заголовком */
+}
+
