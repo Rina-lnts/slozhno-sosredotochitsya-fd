@@ -12,35 +12,26 @@
 }
 
 .theme-neon .decor-rec {
-  /* 1. Позиционирование */
   position: absolute;
-  top: 10px;    /* Точное положение согласно макету */
-  right: 10px;  
-  
-  /* 2. Декоративные стили (должны использовать переменные) */
-  color: var(--accent-color); /* Неоновый акцент */
-  text-shadow: 2px 2px 0 var(--shadow-color); /* Тень для эффекта */
+  top: 10px;
+  right: 10px;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
   font-family: var(--main-font-family);
   font-size: 14px;
 
-  position: absolute; /* или relative, если вы еще не задали absolute */
+  position: absolute;
   top: 10px;    
   right: 10px;
 }
 
 .theme-dark .decor-rec::after {
-  content: ""; /* Обязательное свойство для псевдоэлементов */
-  
-  /* Размеры и форма */
-  width: 9px; /* Подберите размер по макету */
+  content: "";
+  width: 9px;
   height: 9px;
-  border-radius: 50%; /* Делает квадрат кругом (эллипсом) */
-  
-  /* Цвет: используем акцентный цвет тёмной темы */
+  border-radius: 50%;
   background-color: var(--accent-color); 
-  
-  /* Позиционирование точки относительно REC */
   position: absolute;
-  top: 0; /* Или center, чтобы выровнять по центру REC */
-  right: -12px; /* Выносим точку на 12px вправо от края REC */
+  top: 0; 
+  right: -12px; 
 }

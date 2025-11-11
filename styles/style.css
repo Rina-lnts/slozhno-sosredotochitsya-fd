@@ -23,7 +23,6 @@ body{
   padding: 10px;
   position: relative;
   grid-template-rows: auto 1fr; 
-  /* Одна основная колонка для контента */
   grid-template-columns: 1fr;
 }
 
@@ -34,7 +33,7 @@ body{
 }
 
 .header__theme-menu-list {
-  display: flex; /* <-- ГЛАВНОЕ: Активируем Flexbox */
+  display: flex;
   gap: 12px;
   list-style: none; 
   flex-direction: column;
@@ -50,15 +49,10 @@ body{
 .decorated-zone::after {
   content: "";
   position: absolute;
-  /* 1. Позиционирование в правом верхнем углу */
-  bottom: 10px;    /* Отступ от верхнего края (пример) */
-  left: 10px;  /* Отступ от правого края (пример) */
-  
-  /* 2. Создание границ */
-  width: 25px;  /* Размер уголка по ширине */
-  height: 25px; /* Размер уголка по высоте */
-  
-  /* 3. Отрисовка двух сторон границы (top и right) */
+  bottom: 10px;  
+  left: 10px;
+  width: 25px;
+  height: 25px;
   border-bottom: 1px solid var(--deco-color);
   border-left: 1px solid var(--deco-color);
 }
@@ -66,12 +60,10 @@ body{
 .decorated-zone::before {
   content: "";
   position: absolute;
-
   top: 10px;    
   right: 10px;  
   width: 25px;  
   height: 25px; 
-
   border-top: 1px solid var(--deco-color);
   border-right: 1px solid var(--deco-color);
 }
@@ -90,21 +82,17 @@ body{
 
 .header_title {
   color: var(--title-color);
-  font-size: var(--title-size);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: 0.825;
   text-shadow: 4px 4px 0 var(--accent-color);
-  grid-row: 2; /* Помещаем во вторую (большую) строку */
+  grid-row: 2; 
   grid-column: 1; 
 }
 
 .title-decor {
   color: var(--bg-color); 
   background-color: var(--text-color); 
-  font-family: 'IBM Plex mono', sans-serif;
-  line-height: 23.4px;
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .header__paragraph {
@@ -112,6 +100,106 @@ body{
   grid-column: 1; 
   align-self: end; 
   margin-bottom: 55px;
- height: 117px;
+  height: 117px;
+  font-weight: 700;
 }
 
+.section {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+}
+
+.card__paragraph{
+  font-family: 'IBM Plex mono', sans-serif;;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--bg-color);
+  margin-bottom: 20px;
+}
+
+.card__paragraph + .card__paragraph {
+  margin-top: 20px; 
+}
+
+.section__title{
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'IBM Plex mono', sans-serif;
+  line-height: 23.4px;
+  font-weight: 700;
+}
+
+.card__title{
+  font-family: 'IBM Plex mono', sans-serif; 
+  font-size: 18px; 
+  margin-bottom: 10px;
+}
+
+.card__otstype{
+  margin-top: 10px;
+}
+
+.card__title_bold {
+  color: var(--bg-color); 
+  background-color: var(--text-color); 
+  font-family: 'IBM Plex mono', sans-serif;
+}
+
+.card__link-style {
+  text-shadow: 2px 2px 0 var(--text-color); 
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.card__link-style:focus-visible {
+  outline: 1px solid var(--bg-color); 
+  outline-offset: 2px; 
+  border-bottom: none;
+}
+
+.card__link-style:focus {
+  outline: 1px solid var(--bg-color); 
+  outline-offset: 2px; 
+  border-bottom: none;
+
+}.card__link-style:hover {
+  border-bottom: 1px solid var(--bg-color); 
+}
+
+.picture__item{
+  width: 355px;
+  margin: 0;
+}
+
+.pictures__container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: -10px;
+    margin-bottom: 0; 
+}
+
+.footer{
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr; 
+}
+
+.footer_title {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;   
+}
+
+@media (min-width: 768px) { 
+  .header_title {
+    /* Эта формула будет активна, когда ширина экрана >= 768px */
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
