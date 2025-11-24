@@ -47,7 +47,28 @@
   }
 
   .decor_rec {
-    display: inline;
+    display: inline !important;
+  }
+
+  .decor_rec {
+    position: absolute;
+    top: 20px;
+    font-size: 18px;
+    right: 29px;
+    color: var(--accent-color);
+    line-height: 25px;
+  }
+
+  .decor_rec::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    top: 28px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--accent-color);
   }
 }
 

@@ -43,7 +43,7 @@
 }
 
 :root.theme-dark .title-decor {
-  color: var(--bg-color); 
+  color: var(--bg-color) ;
   background-color: var(--text-color);
 }
 
@@ -52,9 +52,13 @@
 }
 
 :root.theme-dark .section__title {
-  color: var(--text-color);
+  color: #FF0070;
 }
 
 :root.theme-dark .header__theme-menu-button {
-  color: var(--text-color);
+  color: #FF0070;
+}
+
+:root.theme-dark .section__title.title-decor {
+  color: #000028;
 }

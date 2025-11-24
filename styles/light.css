@@ -17,3 +17,19 @@
 :root.theme-light .decor_rec {
   display: none;
 }
+
+:root.theme-light {
+  --paragraph-color: #353430;
+}
+
+:root.theme-light .card__paragraph {
+  color: var(--paragraph-color);
+}
+
+:root.theme-light .section__title {
+  color: var(--paragraph-color);
+}
+
+:root.theme-light .header__theme-menu-button {
+  color: #353430;
+}
