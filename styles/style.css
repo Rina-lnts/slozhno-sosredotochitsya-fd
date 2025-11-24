@@ -30,7 +30,7 @@ body{
 .header__theme-menu {
   position: absolute;
   top: 75px;
-  right: 10px;
+  right: 19px;
 }
 
 .header__theme-menu-list {
@@ -139,10 +139,6 @@ body{
   padding-right: 10px;
   margin-bottom: 0;
 }
-
-.section_columnar .card__title {
-    font-weight: 400;
-  }
 
 .card__paragraph{
   font-family: 'IBM Plex mono', sans-serif;;
@@ -312,10 +308,10 @@ body{
   }
   
   .header__theme-menu {
-  position: absolute;
-  top: 192px;
-  right: 20px;
-}
+    position: absolute;
+    top: 192px;
+    right: 20px;
+  }
   
   .header__paragraph{
     position: static;
@@ -340,13 +336,22 @@ body{
   .section{
     padding: 0 20px;
   }
+  
+  /* Отступы между карточками во второй секции для 768px */
+  .content__section:nth-of-type(2) .card {
+    margin-bottom: 20px;
+  }
+  
+  .content__section:nth-of-type(2) .card:last-child {
+    margin-bottom: 0;
+  }
 
   .card__otstype {
     max-width: 236px;
   }
 
   .content{
-    gap: 60px;
+    gap: 80px;
   }
 }
 
@@ -400,6 +405,7 @@ body{
     grid-column: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .section_columnar {
@@ -410,7 +416,9 @@ body{
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   
-
+  .section_columnar .card__title {
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 767px) {
