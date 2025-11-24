@@ -27,7 +27,11 @@ body{
   grid-template-columns: 1fr;
 }
 
-
+.header__theme-menu {
+  position: absolute;
+  top: 75px;
+  right: 10px;
+}
 
 .header__theme-menu-list {
   display: flex;
@@ -135,6 +139,10 @@ body{
   padding-right: 10px;
   margin-bottom: 0;
 }
+
+.section_columnar .card__title {
+    font-weight: 400;
+  }
 
 .card__paragraph{
   font-family: 'IBM Plex mono', sans-serif;;
@@ -304,8 +312,10 @@ body{
   }
   
   .header__theme-menu {
-    top: 192px;
-  }
+  position: absolute;
+  top: 192px;
+  right: 20px;
+}
   
   .header__paragraph{
     position: static;
@@ -348,6 +358,7 @@ body{
   .content{
     gap: 80px;
   }
+
  .card__otstype {
     max-width: 315px;
   }
@@ -377,29 +388,29 @@ body{
   .content__section:nth-of-type(2) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
+    gap: 20px;
   }
   
   .content__section:nth-of-type(2) .section__title {
     grid-column: 1 / 4;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
   
   .content__section:nth-of-type(2) .card {
     grid-column: auto;
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
-    min-width: 335px;
   }
 
-.section_columnar{
-  gap: 0;
-}
+  .section_columnar {
+    padding: 0 20px;
+  }
 
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+  
+
 }
 
 @media (max-width: 767px) {
