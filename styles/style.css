@@ -177,14 +177,22 @@ body {
   font-weight: 700;
 }
 
+.section__title.title-decor {
+  margin-bottom: 10px;
+}
+
 .card__title {
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
+.card__title.title-decor {
+  font-weight: 400;
+}
+
 .section__title + .card__title {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .card__title_bold {
@@ -221,6 +229,7 @@ body {
   width: 100%;
   margin: 0;
 }
+
 
 .pictures__container {
     display: grid;
@@ -374,7 +383,7 @@ body {
     grid-template-columns: 1fr 491px 20px;
   }
 
-  .content{
+  .content {
     gap: 80px;
   }
 
@@ -435,12 +444,4 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-    .picture__item {
-        width: 100%;
-    }
     
-    .section__title.title-decor {
-        margin-bottom: 10px;
-    }
-}
