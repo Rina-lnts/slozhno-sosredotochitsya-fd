@@ -49,7 +49,7 @@ body {
     width: 100%;
     align-items: center;
     position: relative;
-  }
+}
 
 .decorated-zone::after {
   content: "";
@@ -297,6 +297,7 @@ body {
         grid-column: 2 / 4;
         grid-row: 3 / 4;
     }
+    
     .pictures__container .picture__item {
         width: 100%;
         height: 100%; 
