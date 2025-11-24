@@ -17,7 +17,7 @@
   --bg-color: #000028;
   --text-color: #FF0070;
   --deco-color: #FF0070;
-  --paragraph-color: #F1B2CE; 
+  --paragraph-color: #F1B2CE;
 }
 
 :root.theme-dark .decor_rec {
@@ -48,11 +48,11 @@
 }
 
 :root.theme-dark .card__paragraph {
-  color: var(--paragraph-color); 
+  color: var(--paragraph-color);
 }
 
 :root.theme-dark .section__title {
-  color: var(--text-color); 
+  color: var(--text-color);
 }
 
 :root.theme-dark .header__theme-menu-button {

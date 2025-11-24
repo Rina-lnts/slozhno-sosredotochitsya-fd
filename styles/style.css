@@ -1,13 +1,21 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+
 .page {
   position: relative;
   margin: 0px auto;
   font-family: var(--main-font-family), sans-serif;
   overflow-x: hidden;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
   min-height: 6.670px;
-  background-color: var(--background-color);
 }
 
 .header {
@@ -18,11 +26,6 @@ body {
   position: relative;
   grid-template-rows: 1fr auto 1fr; 
   grid-template-columns: 1fr;
-  background-image: var(--background-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .header__theme-menu {
@@ -99,6 +102,7 @@ body {
   padding-left: 10px;
   pointer-events: none;
 }
+
 .header__theme-menu-button:hover {
   outline: 1px solid rgba(50, 49, 45, 0.4);
   outline-offset: 1px;
@@ -138,12 +142,21 @@ body {
   margin-bottom: 0;
 }
 
+.content__section:nth-of-type(2) .card {
+  margin-bottom: 20px;
+}
+
+.content__section:nth-of-type(2) .card:last-child {
+  margin-bottom: 0;
+}
+
+
 .card__paragraph{
-  font-family: 'IBM Plex mono', sans-serif;;
+  font-family: 'IBM Plex mono', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--bg-color);
+  color: var(--paragraph-color);
   margin-bottom: 20px;
 }
 
@@ -197,7 +210,9 @@ body {
   outline-offset: 2px; 
   border-bottom: none;
 
-}.card__link-style:hover {
+}
+
+.card__link-style:hover {
   border-bottom: 1px solid var(--bg-color); 
 }
 
@@ -211,7 +226,6 @@ body {
     gap: 10px; 
     margin-top: 0px;
     margin-bottom: 0;
-
 }
 
 .footer{
@@ -355,6 +369,7 @@ body {
 @media (min-width: 1024px) {
   .header {
     grid-template-columns: 1fr 491px 20px;
+    padding: 20px;
   }
 
   .content{
@@ -395,7 +410,7 @@ body {
   
   .content__section:nth-of-type(2) .section__title {
     grid-column: 1 / 4;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
   }
   
   .content__section:nth-of-type(2) .card {
@@ -422,5 +437,4 @@ body {
     .picture__item {
         width: 100%;
     }
-
 }
