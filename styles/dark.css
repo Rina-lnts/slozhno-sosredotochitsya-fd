@@ -10,35 +10,51 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url("/images/cover-image-dark.png");
---title-size: 116px;
---title-color: #DB00FF;
---accent-color: #FF0070;
---main-font-family: 'IBM Plex Mono';
---bg-color: #353430;
---text-color: #FF0070;
---deco-color: #353430;
+  --background-color: #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --main-font-family: 'IBM Plex Mono';
+  --bg-color: #000028;
+  --text-color: #FF0070;
+  --deco-color: #FF0070;
+  --paragraph-color: #F1B2CE; 
 }
 
-.theme-neon .decor-rec {
+:root.theme-dark .decor_rec {
+  display: inline;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  font-size: 18px;
+  right: 29px;
   color: var(--accent-color);
-  text-shadow: 2px 2px 0 var(--shadow-color);
-  font-family: var(--main-font-family);
-  font-size: 14px;
-  position: absolute;
-  top: 10px;    
-  right: 10px;
+  line-height: 25px;
 }
 
-.theme-dark .decor-rec::after {
+:root.theme-dark .decor_rec::after {
   content: "";
+  display: inline-block;
   width: 9px;
   height: 9px;
+  top: 28px;
+  margin-left: 10px;
   border-radius: 50%;
-  background-color: var(--accent-color); 
-  position: absolute;
-  top: 0; 
-  right: -12px; 
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+:root.theme-dark .title-decor {
+  color: var(--bg-color); 
+  background-color: var(--text-color);
+}
+
+:root.theme-dark .card__paragraph {
+  color: var(--paragraph-color); 
+}
+
+:root.theme-dark .section__title {
+  color: var(--text-color); 
+}
+
+:root.theme-dark .header__theme-menu-button {
+  color: var(--text-color);
 }

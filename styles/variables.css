@@ -1,25 +1,32 @@
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
-*/:root{
---background-image: url("/images/cover-image-light.png");
---background-color: #FFF1F7;
---title-size: 116px;
---title-color: #FFC2E6;
---accent-color: #FF8DCB;
---main-font-family: 'IBM Plex Mono';
---bg-color: #353430;
---text-color: #FF8DCB;
---deco-color: #353430;
+*/
+
+:root {
+  /* Светлая тема по умолчанию */
+  --background-image: url("/images/cover-image-light.png");
+  --background-color: #FFF1F7;
+  --title-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --main-font-family: 'IBM Plex Mono';
+  --bg-color: #353430;
+  --text-color: #FF8DCB;
+  --deco-color: #353430;
+  --paragraph-color: #353430; 
 }
 
+/* Автоматическая темная тема (системные настройки) */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* ... переменные для тёмной темы ... */
-  }
-  .decor-rec {
-    /* Показываем элемент в автомат тёмной теме */
-    display: block; 
+    --background-image: url("/images/cover-image-dark.png");
+    --background-color: #000028;
+    --title-color: #DB00FF;
+    --accent-color: #FF0070;
+    --bg-color: #000028;
+    --text-color: #FF0070;
+    --deco-color: #FF0070;
+    --paragraph-color: #F1B2CE; 
   }
 }
 
