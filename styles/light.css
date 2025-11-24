@@ -12,15 +12,13 @@
   --accent-color: #FF8DCB;
   --text-color: #FF8DCB;
   --deco-color: #353430;
+  --paragraph-color: #353430;
 }
 
 :root.theme-light .decor_rec {
   display: none;
 }
 
-:root.theme-light {
-  --paragraph-color: #353430;
-}
 
 :root.theme-light .card__paragraph {
   color: var(--paragraph-color);

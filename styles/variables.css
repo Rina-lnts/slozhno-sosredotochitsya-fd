@@ -26,7 +26,7 @@
     --bg-color: #000028;
     --text-color: #FF0070;
     --deco-color: #FF0070;
-    --paragraph-color: #F1B2CE; 
+    --paragraph-color: #F1B2CE;
   }
 
   .section__title {
@@ -48,9 +48,6 @@
 
   .decor_rec {
     display: inline !important;
-  }
-
-  .decor_rec {
     position: absolute;
     top: 20px;
     font-size: 18px;
