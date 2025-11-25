@@ -67,6 +67,17 @@
     background-color: var(--accent-color);
     box-shadow: 0 0 4px 2px var(--accent-color);
   }
+
+  .header__theme-menu-button.header__theme-menu-button:hover {
+    outline: 1px solid rgba(255, 0, 112, 0.4);
+    outline-offset: 1px;
+  }
+
+  .header__theme-menu-button.header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #FF0070;
+  }
+
 }
 
 

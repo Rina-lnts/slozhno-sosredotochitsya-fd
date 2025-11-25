@@ -62,3 +62,12 @@
 :root.theme-dark .section__title.title-decor {
   color: #000028;
 }
+
+:root.theme-dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline-offset: 1px;
+}
+
+:root.theme-dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid #FF0070;
+}

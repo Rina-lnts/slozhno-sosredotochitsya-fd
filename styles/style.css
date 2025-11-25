@@ -109,6 +109,13 @@ body {
   outline-offset: 1px;
 }
 
+@media (prefers-color-scheme: light) {
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(50, 49, 45, 0.4);
+    outline-offset: 1px;
+  }
+}
+
 .header__theme-menu-button:focus {
   outline: none;
 }
