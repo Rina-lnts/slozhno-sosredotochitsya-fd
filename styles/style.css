@@ -181,6 +181,10 @@ body {
   margin-bottom: 10px;
 }
 
+.section_pictures .section__title.title-decor {
+  margin-bottom: 6px;
+}
+
 .card__title {
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
@@ -263,6 +267,11 @@ body {
 @media (min-width: 768px) {
   .header__theme-menu-list {
     gap: 15px;
+  }
+
+
+  .section_pictures .section__title.title-decor {
+    margin-bottom: 15px;
   }
 
  .section_columnar {
