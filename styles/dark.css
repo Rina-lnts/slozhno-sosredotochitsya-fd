@@ -9,7 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image: url("../images/cover-image-dark.png");
+  --background-image: url("/images/cover-image-dark.png");
   --background-color: #000028;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
@@ -22,12 +22,6 @@
 
 :root.theme-dark .decor_rec {
   display: inline;
-  position: absolute;
-  top: 20px;
-  font-size: 18px;
-  right: 29px;
-  color: var(--accent-color);
-  line-height: 25px;
 }
 
 :root.theme-dark .decor_rec::after {
@@ -35,7 +29,6 @@
   display: inline-block;
   width: 9px;
   height: 9px;
-  top: 28px;
   margin-left: 10px;
   border-radius: 50%;
   background-color: var(--accent-color);
@@ -59,10 +52,6 @@
   color: #FF0070;
 }
 
-:root.theme-dark .section__title.title-decor {
-  color: #000028;
-}
-
 :root.theme-dark .header__theme-menu-button:hover {
   outline: 1px solid rgba(255, 0, 112, 0.4);
   outline-offset: 1px;
@@ -70,4 +59,8 @@
 
 :root.theme-dark .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid #FF0070;
+}
+
+:root.theme-dark .section__title.title-decor {
+  color: #000028;
 }
