@@ -4,7 +4,6 @@
   переключая тему
 */
 
-
 :root.theme-light {
   --background-image: url("../images/cover-image-light.png");
   --background-color: #FFF1F7;
@@ -13,19 +12,19 @@
   --text-color: #FF8DCB;
   --deco-color: #353430;
   --paragraph-color: #353430;
+  --bg-color: #353430;
 }
 
 :root.theme-light .decor_rec {
-  display: none;
+  display: none !important;
 }
 
-
-:root.theme-light .card__paragraph {
-  color: var(--paragraph-color);
+:root.theme-light .header__theme-menu-button:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.4);
 }
 
 :root.theme-light .section__title {
-  color: var(--paragraph-color);
+  color: #353430;
 }
 
 :root.theme-light .header__theme-menu-button {
