@@ -23,10 +23,10 @@
   outline: 1px solid rgba(50, 49, 45, 0.4);
 }
 
-:root.theme-light .section__title {
+:root.theme-light .header__theme-menu-button {
   color: #353430;
 }
 
-:root.theme-light .header__theme-menu-button {
+:root.theme-light .section__title {
   color: #353430;
 }
