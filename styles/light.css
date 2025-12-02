@@ -20,13 +20,21 @@
 }
 
 :root.theme-light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.4);
+  outline: 1px solid var(--deco-color);
 }
 
 :root.theme-light .header__theme-menu-button {
-  color: #353430;
+  color: var(--deco-color);
 }
 
 :root.theme-light .section__title {
-  color: #353430;
+  color: var(--deco-color);
+}
+
+/* Автоматическая светлая тема на основе системных настроек */
+@media (prefers-color-scheme: light) {
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--deco-color);
+    outline-offset: 1px;
+  }
 }

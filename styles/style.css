@@ -2,21 +2,18 @@
 
 .page {
   position: relative;
-  margin: 0px auto;
   font-family: var(--main-font-family), sans-serif;
-  background-attachment: fixed;
 }
 
-/* Общие классы для повторяющихся стилей */
-.text-ibm-plex {
+.text-monospace {
   font-family: 'IBM Plex mono', sans-serif;
 }
 
-.text-size-18 {
+.text-size-base {
   font-size: 18px;
 }
 
-.text-line-height-23 {
+.text-line-height-increased {
   line-height: 23.4px;
 }
 
@@ -32,7 +29,7 @@
 
 .header__theme-menu {
   position: absolute;
-  top: 75px;
+  top: 76px;
   right: 10px;
 }
 
@@ -101,7 +98,7 @@
   border: none;
   cursor: pointer;
   line-height: 18px;
-  padding: 1.5px 13px;
+  padding: 2px 12.5px;
 }
 
 .header_title {
@@ -124,44 +121,6 @@
 .header__theme-menu-button:hover {
   outline: 1px solid var(--deco-color);
   outline-offset: 1px;
-}
-
-@media (prefers-color-scheme: light) {
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
-    outline-offset: 1px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .section__title {
-    color: var(--text-color);
-  }
-
-  .header__theme-menu-button {
-    color: var(--text-color);
-  }
-
-  .card__paragraph {
-    color: var(--paragraph-color);
-  }
-
-  .title-decor {
-    color: var(--bg-color);
-    background-color: var(--text-color);
-  }
-
-  .decor_rec {
-    display: inline;
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(255, 0, 112, 0.4);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid #FF0070;
-  }
 }
 
 .header__theme-menu-button:focus {
@@ -316,18 +275,18 @@
     margin-bottom: 15px;
   }
 
- .section_two-columns {
+ .section_columnar {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 18px;
         padding: 0 10px;
     }
     
-    .section_two-columns .section__title {
+    .section_columnar .section__title {
         grid-column: 1 / 2;
     }
 
-    .section_two-columns .section__content-wrapper {
+    .section_columnar .section__content-wrapper {
         grid-column: 2 / 3;
         align-items: start;
     }
@@ -431,6 +390,10 @@
     grid-template-columns: 1fr 491px 20px;
   }
 
+.header__theme-menu-button {
+  padding: 1.7px 10.5px;
+}
+
  .card__otstype {
     max-width: 315px;
   }
@@ -476,7 +439,7 @@
     margin-bottom: 0;
   }
 
-  .section_two-columns {
+  .section_columnar {
     padding: 0 20px;
     gap: 12px;
   }

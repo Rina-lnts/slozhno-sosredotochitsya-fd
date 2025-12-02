@@ -5,7 +5,7 @@
 */
 
 :root.theme-dark {
-  --background-image: url("/images/cover-image-dark.png");
+  --background-image: url("../images/cover-image-dark.png");
   --background-color: #000028;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
@@ -41,11 +41,11 @@
 }
 
 :root.theme-dark .section__title {
-  color: #FF0070;
+  color: var(--text-color);
 }
 
 :root.theme-dark .header__theme-menu-button {
-  color: #FF0070;
+  color: var(--text-color);
 }
 
 :root.theme-dark .header__theme-menu-button:hover {
@@ -54,11 +54,11 @@
 }
 
 :root.theme-dark .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid #FF0070;
+  border-bottom: 1px solid var(--text-color);
 }
 
 :root.theme-dark .section__title.title-decor {
-  color: #000028;
+  color: var(--bg-color);
 }
 
 /* Автоматическая темная тема */
@@ -72,5 +72,34 @@
     --text-color: #FF0070;
     --deco-color: #FF0070;
     --paragraph-color: #F1B2CE;
+  }
+
+  .section__title {
+    color: var(--text-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
+  .card__paragraph {
+    color: var(--paragraph-color);
+  }
+
+  .title-decor {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+  }
+
+  .decor_rec {
+    display: inline;
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--deco-color);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--deco-color);
   }
 }

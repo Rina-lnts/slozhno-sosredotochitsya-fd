@@ -5,7 +5,7 @@
 
 :root {
   /* Светлая тема по умолчанию */
-  --background-image: url("/images/cover-image-light.png");
+  --background-image: url("../images/cover-image-light.png");
   --background-color: #FFF1F7;
   --title-color: #FFC2E6;
   --accent-color: #FF8DCB;
