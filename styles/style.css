@@ -124,7 +124,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--deco-color);
+  outline: 1px solid var(--switch-color);
   outline-offset: 1px;
 }
 
