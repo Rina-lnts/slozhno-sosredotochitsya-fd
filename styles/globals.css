@@ -11,9 +11,6 @@ body {
   max-inline-size: 1440px;
   margin: 0 auto;
   background-color: var(--background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 h1,
