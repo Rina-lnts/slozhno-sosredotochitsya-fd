@@ -34,7 +34,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --deco-color: #353430; 
     --switch-color: #32312D66; 
+  }
+
+  .section__title {
+    color: var(--deco-color);
   }
 }
