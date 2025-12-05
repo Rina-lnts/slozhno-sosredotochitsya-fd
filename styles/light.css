@@ -42,7 +42,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --switch-color: #32312D66; 
+    --switch-color: #32312D66;
   }
   
   .section__title {
