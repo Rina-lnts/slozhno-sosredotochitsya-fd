@@ -61,19 +61,4 @@
   .decor_rec {
     display: inline;
   }
-
-  :root .header__theme-menu-button:hover {
-    outline: 1px solid var(--switch-color);
-    outline-offset: 1px;
-  }
-  
-  :root .header__theme-menu-button_active {
-    outline: 1px solid var(--deco-color);
-    outline-offset: 1px;
-    pointer-events: none;
-  }
-  
-  :root .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--deco-color);
-  }
 }
