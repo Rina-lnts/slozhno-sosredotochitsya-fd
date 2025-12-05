@@ -32,12 +32,29 @@
   color: var(--deco-color);
 }
 
+:root.theme-light .card__link-style:hover {
+  border-bottom: 1px solid var(--deco-color);
+}
+
+:root.theme-light .card__link-style:focus-visible {
+  outline: 1px solid var(--deco-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --switch-color: #32312D66; 
   }
-
+  
   .section__title {
     color: var(--deco-color);
+  }
+
+  .card__link-style:hover {
+    border-bottom: 1px solid var(--deco-color);
+  }
+
+  .card__link-style:focus-visible {
+    outline: 1px solid var(--deco-color);
+    
   }
 }

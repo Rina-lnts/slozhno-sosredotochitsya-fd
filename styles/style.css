@@ -3,7 +3,6 @@
 .page {
   position: relative;
   font-family: var(--main-font-family), sans-serif;
-  background-attachment: fixed;
 }
 
 .text-monospace {
@@ -218,18 +217,12 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.card__link-style:focus-visible {
-  outline: 1px solid var(--bg-color);
-}
-
 .card__link-style:focus {
-  outline: 1px solid var(--bg-color);
-  border-bottom: none;
   outline: none;
 }
 
-.card__link-style:hover {
-  border-bottom: 1px solid var(--accent-color);
+.card__link-style:focus-visible {
+  outline: 1px solid var(--deco-color);
 }
 
 .picture__item {
