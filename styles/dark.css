@@ -15,36 +15,6 @@
   display: inline;
 }
 
-:root.theme-dark .section__title {
-  color: var(--text-color);
-}
-
-:root.theme-dark .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-:root.theme-dark .header__theme-menu-button:hover {
-  outline: 1px solid var(--switch-color);
-  outline-offset: 1px;
-}
-
-:root.theme-dark .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-:root.theme-dark .section__title.title-decor {
-  color: var(--bg-color);
-}
-
-:root.theme-dark .card__link-style:hover {
-  border-bottom: 1px solid var(--paragraph-color);
-}
-
-:root.theme-dark .card__link-style:focus-visible {
-  outline: 1px solid var(--paragraph-color);
-  
-}
-
 /* Автоматическая темная тема */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -59,24 +29,7 @@
     --switch-color: #FF007066;
   }
 
-  .section__title {
-    color: var(--text-color);
-  }
-
-  .header__theme-menu-button {
-    color: var(--text-color);
-  }
-
   .decor_rec {
     display: inline;
-  }
-
-  .card__link-style:hover {
-    border-bottom: 1px solid var(--paragraph-color);
-  }
-
-  .card__link-style:focus-visible {
-    outline: 1px solid var(--paragraph-color);
-    
   }
 }
